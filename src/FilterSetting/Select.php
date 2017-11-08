@@ -16,12 +16,14 @@
  * @author     Christian de la Haye <service@delahaye.de>
  * @author     Andreas Isaak <info@andreas-isaak.de>
  * @author     David Molineus <mail@netzmacht.de>
- * @copyright  2012-2016 The MetaModels team.
+ * @copyright  2012-2017 The MetaModels team.
  * @license    https://github.com/MetaModels/filter_select/blob/master/LICENSE LGPL-3.0
  * @filesource
  */
 
-namespace MetaModels\Filter\Setting;
+namespace MetaModels\FilterSelectBundle\FilterSetting;
+
+use MetaModels\Filter\Setting\SimpleLookup;
 
 /**
  * Filter "select field" for FE-filtering, based on filters by the meta models team.

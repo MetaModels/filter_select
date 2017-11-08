@@ -13,12 +13,14 @@
  * @package    MetaModels
  * @subpackage FilterSelect
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
- * @copyright  2012-2016 The MetaModels team.
+ * @copyright  2012-2017 The MetaModels team.
  * @license    https://github.com/MetaModels/filter_select/blob/master/LICENSE LGPL-3.0
  * @filesource
  */
 
-namespace MetaModels\Filter\Setting;
+namespace MetaModels\FilterSelectBundle\FilterSetting;
+
+use MetaModels\Filter\Setting\AbstractFilterSettingTypeFactory;
 
 /**
  * Attribute type factory for select filter settings.
@@ -34,18 +36,18 @@ class SelectFilterSettingTypeFactory extends AbstractFilterSettingTypeFactory
 
         $this
             ->setTypeName('select')
-            ->setTypeIcon('system/modules/metamodelsfilter_select/html/filter_select.png')
-            ->setTypeClass('MetaModels\Filter\Setting\Select')
+            ->setTypeIcon('bundles/metamodelsfilterselect/filter_select.png')
+            ->setTypeClass(Select::class)
             ->allowAttributeTypes();
 
-        foreach (array(
+        foreach ([
             'select',
             'translatedselect',
             'text',
             'translatedtext',
             'tags',
             'translatedtags',
-         ) as $attribute) {
+        ] as $attribute) {
             $this->addKnownAttributeType($attribute);
         }
     }
