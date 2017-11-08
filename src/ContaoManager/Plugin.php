@@ -23,8 +23,8 @@ namespace MetaModels\FilterSelectBundle\ContaoManager;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use MetaModels\AttributeTagsBundle\MetaModelsAttributeTagsBundle;
 use MetaModels\CoreBundle\MetaModelsCoreBundle;
+use MetaModels\FilterSelectBundle\MetaModelsFilterSelectBundle;
 
 /**
  * Contao Manager plugin.
@@ -37,7 +37,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(MetaModelsAttributeTagsBundle::class)
+            BundleConfig::create(MetaModelsFilterSelectBundle::class)
                 ->setLoadAfter(
                     [
                         MetaModelsCoreBundle::class
