@@ -24,10 +24,6 @@ namespace MetaModels\Filter\Setting;
 
 /**
  * Filter "select field" for FE-filtering, based on filters by the meta models team.
- *
- * @package    MetaModels
- * @subpackage FilterSelect
- * @author     Christian de la Haye <service@delahaye.de>
  */
 class Select extends SimpleLookup
 {
