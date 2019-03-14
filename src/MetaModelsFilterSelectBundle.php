@@ -17,15 +17,13 @@
  * @filesource
  */
 
-use MetaModels\Filter\Setting\Events\CreateFilterSettingFactoryEvent;
-use MetaModels\Filter\Setting\SelectFilterSettingTypeFactory;
-use MetaModels\MetaModelsEvents;
+namespace MetaModels\FilterSelectBundle;
 
-return array
-(
-    MetaModelsEvents::FILTER_SETTING_FACTORY_CREATE => array(
-        function (CreateFilterSettingFactoryEvent $event) {
-            $event->getFactory()->addTypeFactory(new SelectFilterSettingTypeFactory());
-        }
-    )
-);
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+/**
+ * The Bundle class.
+ */
+class MetaModelsFilterSelectBundle extends Bundle
+{
+}
