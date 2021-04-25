@@ -40,3 +40,5 @@ $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends
     'onlypossible';
 $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
     'skipfilteroptions';
+$GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
+    'cssID';
