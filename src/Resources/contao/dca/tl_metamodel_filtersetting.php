@@ -29,6 +29,8 @@ $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends
 $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
     'hide_label';
 $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
+    'label_as_blankoption';
+$GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
     'template';
 $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
     'apply_sorting';
