@@ -13,7 +13,8 @@
  * @package    MetaModels/filter_select
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
  * @author     Ingolf Steinhardt <info@e-spin.de>
- * @copyright  2012-2021 The MetaModels team.
+ * @author     Sven Baumann <baumann.sv@gmail.com>
+ * @copyright  2012-2022 The MetaModels team.
  * @license    https://github.com/MetaModels/filter_select/blob/master/LICENSE LGPL-3.0-or-later
  * @filesource
  */
@@ -59,18 +60,17 @@ class SelectFilterSettingTypeFactory extends AbstractFilterSettingTypeFactory
             ->setTypeClass(Select::class)
             ->allowAttributeTypes();
 
-        foreach (
-            [
-                'alias',
-                'translatedalias',
-                'select',
-                'translatedselect',
-                'text',
-                'translatedtext',
-                'tags',
-                'translatedtags',
-            ] as $attribute
-        ) {
+        $attributes = [
+            'alias',
+            'translatedalias',
+            'select',
+            'translatedselect',
+            'text',
+            'translatedtext',
+            'tags',
+            'translatedtags',
+        ];
+        foreach ($attributes as $attribute) {
             $this->addKnownAttributeType($attribute);
         }
 
