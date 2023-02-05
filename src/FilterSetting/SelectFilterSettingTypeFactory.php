@@ -3,7 +3,7 @@
 /**
  * This file is part of MetaModels/filter_select.
  *
- * (c) 2012-2021 The MetaModels team.
+ * (c) 2012-2023 The MetaModels team.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -14,7 +14,7 @@
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
  * @author     Ingolf Steinhardt <info@e-spin.de>
  * @author     Sven Baumann <baumann.sv@gmail.com>
- * @copyright  2012-2022 The MetaModels team.
+ * @copyright  2012-2023 The MetaModels team.
  * @license    https://github.com/MetaModels/filter_select/blob/master/LICENSE LGPL-3.0-or-later
  * @filesource
  */
@@ -69,6 +69,7 @@ class SelectFilterSettingTypeFactory extends AbstractFilterSettingTypeFactory
             'translatedtext',
             'tags',
             'translatedtags',
+            'numeric',
         ];
         foreach ($attributes as $attribute) {
             $this->addKnownAttributeType($attribute);
