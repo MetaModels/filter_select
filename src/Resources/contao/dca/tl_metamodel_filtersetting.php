@@ -46,39 +46,3 @@ $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends
     'skipfilteroptions';
 $GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['metapalettes']['select extends _attribute_']['+fefilter'][] =
     'cssID';
-
-$GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['fields']['select_where'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_metamodel_filtersetting']['select_where'],
-    'exclude'   => true,
-    'inputType' => 'textarea',
-    'sql'       => 'text NULL',
-    'eval'      => [
-        'tl_class'       => 'clr',
-        'style'          => 'height: 4em;',
-        'decodeEntities' => 'true'
-    ]
-];
-
-$GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['fields']['select_filter'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_metamodel_filtersetting']['select_filter'],
-    'exclude'   => true,
-    'inputType' => 'select',
-    'sql'       => 'int(11) unsigned NOT NULL default \'0\'',
-    'eval'      => [
-        'includeBlankOption' => true,
-        'alwaysSave'         => true,
-        'submitOnChange'     => true,
-        'tl_class'           => 'clr w50',
-        'chosen'             => 'true'
-    ],
-];
-
-$GLOBALS['TL_DCA']['tl_metamodel_filtersetting']['fields']['select_filterparams'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_metamodel_filtersetting']['select_filterparams'],
-    'exclude'   => true,
-    'inputType' => 'mm_subdca',
-    'sql'       => 'text NULL',
-    'eval'      => [
-        'tl_class' => 'clr m12'
-    ]
-];
