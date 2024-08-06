@@ -35,14 +35,14 @@ class SelectFilterSettingTypeFactory extends AbstractFilterSettingTypeFactory
      *
      * @var EventDispatcherInterface
      */
-    private $dispatcher;
+    private EventDispatcherInterface $dispatcher;
 
     /**
      * The filter URL builder.
      *
      * @var FilterUrlBuilder
      */
-    private $filterUrlBuilder;
+    private FilterUrlBuilder $filterUrlBuilder;
 
     /**
      * {@inheritDoc}
@@ -70,6 +70,8 @@ class SelectFilterSettingTypeFactory extends AbstractFilterSettingTypeFactory
             'tags',
             'translatedtags',
             'numeric',
+            'combinedvalues',
+            'translatedcombinedvalues'
         ];
         foreach ($attributes as $attribute) {
             $this->addKnownAttributeType($attribute);
