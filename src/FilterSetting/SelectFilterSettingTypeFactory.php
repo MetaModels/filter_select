@@ -70,6 +70,7 @@ class SelectFilterSettingTypeFactory extends AbstractFilterSettingTypeFactory
             'tags',
             'translatedtags',
             'numeric',
+            'timestamp',
             'combinedvalues',
             'translatedcombinedvalues'
         ];
