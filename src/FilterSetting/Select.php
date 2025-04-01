@@ -25,7 +25,7 @@ namespace MetaModels\FilterSelectBundle\FilterSetting;
 use MetaModels\Filter\Setting\SimpleLookup;
 
 /**
- * Filter "select field" for FE-filtering, based on filters by the meta models team.
+ * Filter "select field" for FE-filtering, based on filters by the MetaModels team.
  */
 class Select extends SimpleLookup
 {
